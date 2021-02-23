@@ -1,0 +1,47 @@
+html,body{
+  background:radial-gradient(black,rgb(95, 24, 2),
+  rgb(46, 6, 1),rgb(80,5,5));
+  color:white;
+}
+
+
+.container{
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:200px 500px;
+ 
+  
+}
+header{
+  grid-area:1/1/2/3;
+  text-align:center;
+  color:rgb(209, 157, 108);
+  font-size:25px;
+  font-family: 'Ranchers', cursive;
+
+  
+}
+.screen{
+  width:90%;
+  box-sizing:border-box;
+  margin:25px auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-area:2/1/4/3;
+  gap:30px;
+}
+
+.player{
+  background:rgb(160, 138, 104);
+  color:white;
+  text-align:center;
+  
+  font-size:30px;
+  font-family: 'Ranchers', cursive;
+  border:solid red; 
+}
+
+
+
+
