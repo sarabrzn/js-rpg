@@ -9,7 +9,7 @@ html,body{
   box-sizing:border-box;
   display:grid;
   grid-template-columns:1fr 1fr;
-  grid-template-rows:200px 500px;
+  grid-template-rows:1fr 3fr 1fr;
  
   
 }
@@ -36,7 +36,6 @@ header{
   background:rgb(160, 138, 104);
   color:white;
   text-align:center;
-  
   font-size:30px;
   font-family: 'Ranchers', cursive;
   border:solid red; 
