@@ -7,24 +7,115 @@
   <title>RPG Challenge</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Ranchers&display=swap" rel="stylesheet"> 
- 
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- ###################################################### -->
 <body class="container">
+  <!-- TITLE -->
   <header>
-    <h1>
-      RPG PROJECT
-    </h1>
+    <h1>RPG PROJECT</h1>
   </header>
-  <main class="screen">
-    <div class="player"id="player1">Player 1</div>
-    <div class="player"id="player2">Player 2</div>
-  </main>
+
+<!-- ################# CREATION PANELS #################### -->
+  <!--Player 1 -->
+  <div class=create>
+    <div id="create1">
+      <p>Player 1</p>
+      <form class="input">
+    <!-- input name -->
+        <input type="text" id="name1" placeholder="Choose your name">
+    <!-- dropdown race -->
+        <select id = "race1">
+          <option selected disabled="true">What are you?</option>
+          <option value ="human">Human</option>
+          <option value ="orc">Orc</option>
+          <option value ="elf">Elf</option>
+          <option value="vampire">Vampire</option>
+        </select>
+    <!-- dropdown items -->
+        <select id = "item1">
+          <option selected disabled = "true">Select item</option>
+          <option value ="boots">Boots</option>
+          <option value ="staff">Staff</option>
+          <option value ="sword">Sword</option>
+          <option value="bow">Bow</option>
+        </select>
+      </form>
+      <div class="saveButton">
+        <button type="button"  id="saveButton1">Save</button>   
+      </div>  
+    </div>
+  
+
+    <!-- Player 2 -->
+    <div id="create2">
+      <p>Player 2</p>
+      <form class="input">
+        <input type="text" id="name2" placeholder="Choose your  name">
+        <select id = "race2">
+          <option selected disabled="true">What are you?</option>
+          <option value = "human">Human</option>
+          <option value = "orc">Orc</option>
+          <option value = "elf">Elf</option>
+          <option value="vampire">Vampire</option>
+        </select>
+        <select id = "item2">
+          <option selected disabled="true">Select item</option>
+          <option value = "boots">Boots</option>
+          <option value = "staff">Staff</option>
+          <option value = "sword">Sword</option>
+          <option value="bow">Bow</option>
+        </select>
+      </form>
+      <div class="saveButton">
+        <button type="button"  id="saveButton2">Save</button>  
+      </div> 
+    </div>
+
+  </div>
+  
+<!-- ################ LOGBOX ###############################-->
+  <div id="logBox">
+    <h3>This is the log box</h3>
+    <h3>It gives feedback on the players' moves</h3>
+  </div>
+  <!-- ############## Vs SCREEN   ########################### -->
+  
+  <div class="screen">
+    <!-- Player 1 -->
+    <div id="player1">
+        Player 1 
+        display visual, name, item, health
+    </div>
+    <div id="player2">
+        Player 2
+        display visual, name, item, health
+    </div>
+    <div id="Vs">
+      Vs
+    </div>
+  </div>  
+    
+  
+       
+  <div id="btnPanel">
+    <div id="btnsP1">
+      <button type="button" id="hit1">Hit</button>
+      <button type="button" id="heal1">Heal</button>
+      <button type="button" id="yield1">Yield</button>  
+    </div>
+    <div id="btnsP2">
+      <button type="button" id="hit2">Hit</button>
+      <button type="button" id="heal2">Heal</button>
+      <button type="button" id="yield2">Yield</button>
+    </div>  
+  </div>
 
   
-<script>
-   <script src="character.js"></script> 
-   <script src="script.js"></script> 
-</script>
+
+<script src="character.js"></script> 
+<script src="gamelogic.js"></script> 
 </body>
 </html>
