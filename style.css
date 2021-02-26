@@ -16,11 +16,7 @@ header{
   font-size:25px;
   font-family: 'Ranchers', cursive;  
 }
-
-/* Logo Vs */
-
-
-/* CREATION PANELS */
+/* ############  CREATION PANELS #############*/
 .create{
   width:90%;
   box-sizing:border-box;
@@ -29,10 +25,9 @@ header{
   grid-template-columns:1fr 25px 1fr;
   grid-column:1/4;
   grid-row:3/4;
-  gap:25px;  
-  
-
+  gap:25px; 
 }
+
  #create1{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -43,8 +38,7 @@ header{
   font-size:22px;
   font-family: 'Ranchers', cursive;
   background:rgb(160, 138, 104);
-  color:black;
-    
+  color:black;   
 }
 
 #create2{
@@ -59,49 +53,31 @@ header{
   background:rgb(160, 138, 104);
   color:black;  
 } 
-
+/* form */
 .input{
-  
   grid-column:1/5;
   grid-row:2/3;
-  
-  
- 
 }
-
+/* text "player 1, player 2 */
 p{
-  
   grid-column:1/5;
   grid-row:1/2;
   align-self:start;
-
 }
 
 .saveButton{
   grid-column:1/5;
   grid-row:3/4;
-  align-self:center;
- 
-  
- 
-   
+  align-self:center;   
 }
 
 #saveButton1{
   background-color:darkslategray;
-  
-
 }
-
 #saveButton2{
   background-color:darkslategray;
-
-}
-  
+} 
 /* #############  END CREATION PANELS #####################*/
-  
-  
-
 /* ###########     VS SCREEN     ############################  */  
 .screen{
   width:90%;
@@ -112,11 +88,8 @@ p{
   grid-template-rows:1fr 25px 1fr;
   grid-column:1/4;
   grid-row:3/4;
-  gap:25px; 
-  
-  
+  gap:25px;   
 }
-
 #Vs{
   box-sizing:border-box;
   grid-column:2/3;
@@ -127,10 +100,6 @@ p{
   color:orangered;
   font-family:'Reggae One', cursive;  
 }
-
-
-
-
 #player1{
   display:grid;
   grid-column:1/2;
@@ -140,7 +109,6 @@ p{
   font-family: 'Ranchers', cursive;
   border:solid rgb(150, 41, 2);   
 }
-
 #player2{
   display:grid;
   grid-column:3/4;
@@ -151,13 +119,6 @@ p{
   border:solid rgb(150, 41, 2);
   
 }
-
-
-
-
-
-
-
 /* Panel with 6 buttons for the players moves*/
 #btnPanel{
   width:90%;
@@ -167,7 +128,7 @@ p{
   grid-template-columns:1fr 25px 1fr;
   grid-column:1/4;
   grid-row:4/5;
-  gap:20px;
+  gap:25px;
   justify-items:center;  
 }
 /* styling */ 
@@ -186,18 +147,40 @@ button{
   grid-column:3/4;  
 }
 /* A dialog box which tells which move the player made */
-#logBox{
+.logBox{
   width:90%;
   box-sizing:border-box;
   margin:25px auto;
   display:grid;
-  background:rgb(219, 207, 207);
+  grid-template-columns:1fr 25px 1fr;
   grid-column:1/4;
   grid-row:2/3;
+  
   color:black;
   text-align:center;
+  font-size:22px;
   font-family: 'Ranchers', cursive;
+  gap:25px;
 }
+#logBox1{
+  
+  display:grid;
+  grid-column:1/2;
+  text-align:center;
+  background:silver;
+  
+  
+
+}
+#logBox2{
+  display:grid;
+  grid-column:3/4;
+  text-align:center;
+  background-color:silver;
+}
+
+
+
 
 
 

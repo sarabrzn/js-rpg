@@ -1,5 +1,6 @@
 //Use this script to generate your character
-logBox.style.display="none";
+logBox1.style.display="none";
+logBox2.style.display="none";
 player1.style.display="none";
 player2.style.display="none";
 btnsP1.style.display="none";
@@ -27,33 +28,26 @@ function Person(id,nom,race,item){
     this.totalDamage = this.damage();
 
     this.displayChar = function(){
-        return console.log(`I am a ${this.race}, I wield a ${this.item}, my total health point are ${this.maxHealth}`);
+        return /* console.log */(`I am a ${this.race}, I wield a ${this.item}, my total health point are ${this.maxHealth}`);
     };
 }
 
-
-
-
 //Player 1
-
 document.getElementById("saveButton1").addEventListener("click",()=>{
     id="player1";
     nom=name1.value;
     race=race1.value;
     item=item1.value;
     character1=new Person(id,nom,race,item);
-    console.log(character1);
-    logBox.style.display="inline";
+    logBox1.style.display="inline";
     player1.style.display="inline";
     btnsP1.style.display="inline";
     create1.style.display="none"; 
-    
-    
+    logBox1.innerHTML=character1.displayChar();
+    return(character1);   
 });
 
 //Player 2
-
-
 var createCharacter2 = document.getElementById("saveButton2");
 createCharacter2.addEventListener("click",()=>{
     id="player2";
@@ -62,22 +56,14 @@ createCharacter2.addEventListener("click",()=>{
     item=item2.value;
     character2=new Person(id,nom,race,item);
     console.log(character2);
-    logBox.style.display="inline";
+    logBox2.style.display="inline";
     player2.style.display="inline";
     btnsP2.style.display="inline";
     create2.style.display="none"; 
+    logBox2.innerHTML=character2.displayChar();
+    return(character2);
     
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
